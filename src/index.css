@@ -36,20 +36,24 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.btn {
+  display: inline-block;
+  background: #213547;
+  color:rgba(255, 255, 255, 0.87);
+  border: none;
+  padding: .5em 1em;
+  margin: .25em;
   cursor: pointer;
-  transition: border-color 0.25s;
+  text-decoration: none;
+  font: inherit;
 }
 
-button:hover {
-  border-color: #646cff;
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(.98);
 }
 
 button:focus,
@@ -59,7 +63,84 @@ button:focus-visible {
 
 /* ********** LAYOUT ********** */
 
+.container {
+  max-width: 45vw;
+  margin: 2.5em auto;
+  overflow: auto;
+  min-height: 60vh;
+  border: 1rem solid steelblue;
+  padding: 2.5em;
+  border-radius: 1.5em;
+}
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.task {
+  background-color: #24242499;
+  margin: .25em;
+  padding: .5em 1em;
+  cursor: pointer;
+}
+
+.task.reminder {
+  border-left: 1em solid green;
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
 
 /* ********** MEDIA QUERIES ********** */
 
