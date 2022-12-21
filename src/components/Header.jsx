@@ -1,13 +1,13 @@
 import Button from "./Button"
 
-const Header = ({ onAdd }) => {
+const Header = ({ onAdd, showAdd }) => {
   return (
     <header className="header">
       <h1>Task Tracker</h1>
       <Button
         onClick={onAdd}
-        color="green"
-        text="Add"
+        color={showAdd ? "red" : "green"}
+        text={showAdd ? "Close" : "Add"}
       />
     </header>
   )

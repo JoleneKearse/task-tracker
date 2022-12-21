@@ -47,6 +47,7 @@ const App = () => {
     <>
       <Header
         onAdd={() => setShowAddTask(!showAddTask)}
+        showAdd={showAddTask}
       />
       {showAddTask && <AddTask
         onAdd={addTask}
