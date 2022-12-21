@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Header from "./components/Header"
+import AddTask from "./components/AddTask"
 import Tasks from "./components/Tasks"
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
   return (
     <>
       <Header />
+      <AddTask />
       {tasks.length > 0 ? <Tasks
         tasks={tasks}
         onDelete={deleteTask}
