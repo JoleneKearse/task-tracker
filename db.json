@@ -1,12 +1,6 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Doctors Appointment",
-      "day": "Feb 5th at 2:30pm",
-      "reminder": true
-    },
-    {
       "id": 2,
       "text": "Piggy Pedicure",
       "day": "Feb 6th at 1:30pm",
@@ -17,6 +11,12 @@
       "text": "Grocery Shopping",
       "day": "Feb 5th at 2:30pm",
       "reminder": false
+    },
+    {
+      "text": "Diddle a birdie",
+      "day": "Whenever an opportunity presents itself",
+      "reminder": true,
+      "id": 4
     }
   ]
 }
