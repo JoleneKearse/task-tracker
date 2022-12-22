@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react"
+<<<<<<< HEAD
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+=======
+>>>>>>> parent of a894b6c (feat: add routes, footer & about comp)
 import Header from "./components/Header"
 import AddTask from "./components/AddTask"
 import Tasks from "./components/Tasks"
-import Footer from "./components/Footer"
-import About from "./components/About"
 
 const App = () => {
   const [showAddTask, setShowAddTask] = useState(false)
@@ -77,29 +78,22 @@ const App = () => {
   }
 
   return (
-    <Router>
-      <div className="container">
-        <Header
-          onAdd={() => setShowAddTask(!showAddTask)}
-          showAdd={showAddTask}
-        />
-        <Route path='/' exact render={(props) => (<>
-          {showAddTask && <AddTask
-            onAdd={addTask}
-          />}
-          {tasks.length > 0 ? <Tasks
-            tasks={tasks}
-            onDelete={deleteTask}
-            onToggle={toggleReminder}
-          /> : "Congrats, you've completed all your tasks!"}
-        </>)} />
-        <Route
-          path='/about'
-          component={About}
-        />
-        <Footer />
-      </div>
-    </Router>
+
+    <>
+      <Header
+        onAdd={() => setShowAddTask(!showAddTask)}
+        showAdd={showAddTask}
+      />
+      {showAddTask && <AddTask
+        onAdd={addTask}
+      />}
+      {tasks.length > 0 ? <Tasks
+        tasks={tasks}
+        onDelete={deleteTask}
+        onToggle={toggleReminder}
+      /> : "Congrats, you've completed all your tasks!"}
+    </>
+
   )
 }
 
