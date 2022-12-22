@@ -33,6 +33,7 @@ const AddTask = ({ onAdd }) => {
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Add Task"
+          style={{ color: "#EE96C8" }}
         />
       </div>
       <div className="form-control">
@@ -42,6 +43,7 @@ const AddTask = ({ onAdd }) => {
           value={day}
           onChange={(e) => setDay(e.target.value)}
           placeholder="Add Day & Time"
+          style={{ color: "#EE96C8" }}
         />
       </div>
       <div className="form-control form-control-check">
