@@ -2,7 +2,7 @@ const About = () => {
   return (
     <>
       <h4>Version 1.0.0</h4>
-      <a href="/Go Back">Go Back</a>
+      <a href="/">Go Back</a>
     </>
   )
 }
