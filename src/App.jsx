@@ -1,8 +1,4 @@
 import { useState, useEffect } from "react"
-<<<<<<< HEAD
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-=======
->>>>>>> parent of a894b6c (feat: add routes, footer & about comp)
 import Header from "./components/Header"
 import AddTask from "./components/AddTask"
 import Tasks from "./components/Tasks"
@@ -78,7 +74,6 @@ const App = () => {
   }
 
   return (
-
     <>
       <Header
         onAdd={() => setShowAddTask(!showAddTask)}
@@ -93,7 +88,6 @@ const App = () => {
         onToggle={toggleReminder}
       /> : "Congrats, you've completed all your tasks!"}
     </>
-
   )
 }
 
